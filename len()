@@ -1,0 +1,9 @@
+long int len(long int l_numb) {
+    long int counter = 0;
+    do {
+        l_numb /= 10;
+        counter++;
+    }
+    while (l_numb > 0);
+    return counter;
+}
