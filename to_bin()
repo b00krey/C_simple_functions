@@ -1,0 +1,11 @@
+long int to_bin(long int numb) {
+    long int discharge = 1;
+    long int bin_number = 0;
+    do {
+        bin_number += (numb % 2) * discharge;
+        discharge *= 10;
+        numb /= 2;
+    }
+    while (numb > 0);
+    return bin_number;
+}
